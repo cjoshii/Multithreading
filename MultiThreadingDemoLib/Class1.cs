@@ -7,7 +7,7 @@ public class Class1
        
         for(int i = 0; i < 10; i++)
         {
-            Console.WriteLine("Doing work " +i+1+ " on thread: " + System.Threading.Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine("Doing work " +(i+1)+ " on thread: " + Environment.CurrentManagedThreadId);
             Thread.Sleep(100);
         }
        
